@@ -29,7 +29,7 @@ st.subheader("En avant cette semaine, l'un des meilleurs films de la galaxy")
 st.subheader("Star Wars: A New Hope")
 st.image("https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg")
 st.write("Synopsis:")
-tmdb["overview"][tmdb["original_title"].str.contains("star wars", case = False)].iloc[0]
+# tmdb["overview"][tmdb["original_title"].str.contains("star wars", case = False)].iloc[0]
 
 # st.image("https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6wkfovpn7Eq8dYNKaG5PY3q2oq6.jpg")
 
