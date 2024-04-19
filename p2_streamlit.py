@@ -18,7 +18,7 @@ st.markdown("""
             </style>
             """, unsafe_allow_html=True)
 
-link = "C:\Users\User\Wild_Code\Projects\Project_2\DB\tmdb_full.csv"
+link = "C:/Users/User/Wild_Code/Projects/Project_2/DB/tmdb_full.csv"
 tmdb = pd.read_csv(link, low_memory = False)
 
 # tmdb[tmdb["original_title"].str.contains("star wars", case = False)]
