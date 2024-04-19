@@ -25,7 +25,7 @@ st.markdown("""
 st.title("Bienvenue sur le site du Sénéchal")
 st.header("Temple de la culture cinématographique")
 
-st.subheader("En avant cette semaine, l'un des meilleurs films de la galaxy")
+st.subheader("En avant cette semaine, l'un des meilleurs films de la galaxie")
 st.subheader("Star Wars: A New Hope")
 st.image("https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg")
 st.write("Synopsis:")
