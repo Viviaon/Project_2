@@ -23,7 +23,6 @@ st.markdown("""
 
 # link = r"C:\Users\User\Wild_Code\Projects\Project_2\DB\tmdb_full.csv"
 # tmdb = pd.read_csv(link, low_memory = False)
-movie_df
 
 # tmdb[tmdb["original_title"].str.contains("star wars", case = False)]
 st.title("Bienvenue sur le site du Sénéchal")
