@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import githubimport
+# import githubimport
 from Viviaon.Project_2 import call_df
 
 # Ajouter des pages de navigation (Accueil / Films / Séries)
