@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import call_df
 
 # Ajouter des pages de navigation (Accueil / Films / Séries)
 # Ajouter une barre de recherche 
@@ -24,7 +23,7 @@ st.markdown("""
 
 # link = r"C:\Users\User\Wild_Code\Projects\Project_2\DB\tmdb_full.csv"
 # tmdb = pd.read_csv(link, low_memory = False)
-call_df.movie_df
+movie_df
 
 # tmdb[tmdb["original_title"].str.contains("star wars", case = False)]
 st.title("Bienvenue sur le site du Sénéchal")
