@@ -23,7 +23,7 @@ st.markdown("""
 
 # link = r"C:\Users\User\Wild_Code\Projects\Project_2\DB\tmdb_full.csv"
 # tmdb = pd.read_csv(link, low_memory = False)
-movie_df
+movie_df()
 
 # tmdb[tmdb["original_title"].str.contains("star wars", case = False)]
 st.title("Bienvenue sur le site du Sénéchal")
@@ -38,7 +38,7 @@ st.image("https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg")
 # st.image("https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg")
 
 st.write("Synopsis:")
-movie_final["overview"][movie_final["original_title"].str.contains("star wars", case = False)].iloc[0]
+movie_df()["overview"][movie_df()["original_title"].str.contains("star wars", case = False)].iloc[0]
 
 # st.image("https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6wkfovpn7Eq8dYNKaG5PY3q2oq6.jpg")
 
