@@ -29,7 +29,7 @@ st.markdown("""
                     padding: 10px;
                 }
                 div[class="css-5spcrp"] {
-                    padding: 10px;
+                    padding: 10px !important;
                 }
                 [data-testid="stSidebarNav"]::before {
                 content: "Navigation";
@@ -81,13 +81,9 @@ if movie_search:
                                                     'border_radius': '10px',
                                                     'padding': '10px'},
                                         'text': {'font_family': 'Source Sans Pro'},
-                                        'title': {'font_family': 'Source Sans Pro'}},
-                                on_click = lambda: st.switch_page('Pages/5_Vos_Recherches.py'),
-                                key = "movie"+str(ind))
-                st.page_link('Pages/5_Vos_Recherches.py', label = "En savoir plus")
-                if cardNum == True:
-                    st.switch_page('1_🍿_Accueil.py')
-                    st.page_link('1_🍿_Accueil.py')
+                                        'title': {'font_family': 'Source Sans Pro'}}
+                                # on_click = lambda: st.switch_page('Pages/5_Vos_Recherches.py'),
+                                )
                                 # exec(f"card{ind} = card(title = {search['title_x'][search['title_x'] == search['title_x'].iloc[ind]].iloc[0]},"
                                 # f"text = {search['genres_x'][search['title_x'] == search['title_x'].iloc[ind]].iloc[0]},"
                                 # f"image = 'https://image.tmdb.org/t/p/w500' + {search['poster_path'][search['title_x'] == search['title_x'].iloc[ind]].iloc[0]},"
@@ -101,28 +97,31 @@ if movie_search:
         except:
             with numCol:
                 st.write("")
-st.session_state
-col1b, col2b = st.columns(2)
-with col1b:
-    cardTest = card(title = "Inception",
-                                text = "",
-                                image = "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
-                                styles = {"card" :{"width": "80",
-                                                    "height": "300px",
-                                                    "border_radius": "10px",
-                                                    "padding": "10px"},
-                                        "text": {"font_family": "Source Sans Pro"},
-                                        "title": {"font_family": "Source Sans Pro"}},
-                                on_click = lambda: st.switch_page("Pages/5_Vos_Recherches.py"))
 
-with col2b:
-    cardTest2 = card(title = "Inception1",
-                                text = "",
-                                image = "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
-                                styles = {"card" :{"width": "80",
-                                                    "height": "300px",
-                                                    "border_radius": "10px",
-                                                    "padding": "10px"},
-                                        "text": {"font_family": "Source Sans Pro"},
-                                        "title": {"font_family": "Source Sans Pro"}},
-                                on_click = lambda: st.switch_page("Pages/5_Vos_Recherches.py"))
+# Test pour récupérer le session state -> ne fonctionne pas                
+
+# st.session_state
+# col1b, col2b = st.columns(2)
+# with col1b:
+#     cardTest = card(title = "Inception",
+#                                 text = "",
+#                                 image = "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
+#                                 styles = {"card" :{"width": "80",
+#                                                     "height": "300px",
+#                                                     "border_radius": "10px",
+#                                                     "padding": "10px"},
+#                                         "text": {"font_family": "Source Sans Pro"},
+#                                         "title": {"font_family": "Source Sans Pro"}},
+#                                 on_click = lambda: st.switch_page("Pages/5_Vos_Recherches.py"))
+
+# with col2b:
+#     cardTest2 = card(title = "Inception1",
+#                                 text = "",
+#                                 image = "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
+#                                 styles = {"card" :{"width": "80",
+#                                                     "height": "300px",
+#                                                     "border_radius": "10px",
+#                                                     "padding": "10px"},
+#                                         "text": {"font_family": "Source Sans Pro"},
+#                                         "title": {"font_family": "Source Sans Pro"}},
+#                                 on_click = lambda: st.switch_page("Pages/5_Vos_Recherches.py"))

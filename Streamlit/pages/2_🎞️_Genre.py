@@ -18,8 +18,9 @@ st.markdown("""
                     width: fit-content !important;
                 }
                 div[data-testid="column"] {
-                    margin-right: 5px;
-                    margin-left: 5px;
+                    margin-right: 1px;
+                    margin-left: 1px;
+                    padding: 10px;
                 }
                 [data-testid="stSidebarNav"]::before {
                 content: "Navigation";
@@ -53,8 +54,8 @@ searching_list = []
 # Show the results, if you have a text_search
 if genre_search:
     
-    col1, col2, col3, col4, col5, col6, col7, col8, col9, col10, col11, col12, col13, col14, col15, col16 = st.columns(16)
-    col = [col1, col2, col3, col4, col5, col6, col7, col8, col9, col10, col11, col12, col13, col14, col15, col16]
+    col1, col2, col3, col4, col5, col6, col7, col8, col9, col10, col11, col12, col13, col14, col15 = st.columns(15)
+    col = [col1, col2, col3, col4, col5, col6, col7, col8, col9, col10, col11, col12, col13, col14, col15]
 
     
     for ind, numCol in enumerate(col):
@@ -63,8 +64,8 @@ if genre_search:
                 card_one = card(title = search["title_x"][search["genres_x"] == search["genres_x"].iloc[ind]].iloc[0],
                                 text = search["overview"][search["genres_x"] == search["genres_x"].iloc[ind]].iloc[0],
                                 image = "https://image.tmdb.org/t/p/w500" + search["poster_path"][search["genres_x"] == search["genres_x"].iloc[ind]].iloc[0],
-                                styles = {"card" :{"width": "200",
-                                                    "height": "400px",
+                                styles = {"card" :{"width": "80px",
+                                                    "height": "300px",
                                                     "border_radius": "60px"},
                                         "text": {"font_family": "calibri"},
                                         "title": {"font_family": "cambria"}})
